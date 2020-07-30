@@ -15,7 +15,7 @@
     },
     "autoload"    : {
         "psr-4" : {
-            "Ssf\\Lumen\\Logging" : "src/"
+            "Ssf\\Lumen\\Logging\\" : "src/"
         }
     }
 }
