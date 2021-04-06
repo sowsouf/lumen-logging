@@ -1,21 +1,23 @@
 {
-    "name"        : "ssf/lumen-logging",
-    "description" : "A lumen logging config file",
-    "homepage"    : "http://github.com/sowsouf/lumen-logging",
-    "license"     : "MIT",
-    "authors"     : [
+    "name": "ssf/lumen-logging",
+    "description": "A lumen logging config file",
+    "homepage": "http://github.com/sowsouf/lumen-logging",
+    "license": "MIT",
+    "authors": [
         {
-            "name"  : "Sofiane Akbly",
-            "email" : "sofiane.akbly@gmail.com"
+            "name": "Sofiane Akbly",
+            "email": "sofiane.akbly@gmail.com"
         }
     ],
-    "require"     : {
-        "php"                    : "7.*",
+    "require": {
+        "php": "7.*",
         "laravel/lumen-framework": "7.*|8.*"
     },
-    "autoload"    : {
-        "psr-4" : {
-            "Ssf\\Lumen\\Logging\\" : "src/"
+    "autoload": {
+        "psr-4": {
+            "Ssf\\Lumen\\Logging\\": "src/"
         }
-    }
+    },
+    "version": "0.0.1-beta5",
+    "time": "2021-04-06"
 }
