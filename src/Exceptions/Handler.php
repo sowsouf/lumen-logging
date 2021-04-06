@@ -51,7 +51,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
-        Log::channel('errors')->error($exception->getTraceAsString());
+        Log::channel('errors')->error($exception->getMessage() . " " . $exception->getFile() . "(" . $exception->getLine() . ")" . PHP_EOL . $exception->getTraceAsString());
         if (env('APP_DEBUG') || !View::exists('error')) {
             return parent::render($request, $exception);
         } else {
